@@ -6,7 +6,10 @@ import {ForgetPasswordComponent} from "./forget-password/forget-password.compone
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, LoginComponent, SignUpComponent, ForgetPasswordComponent],
+  imports: [RouterOutlet,
+    LoginComponent,
+    SignUpComponent,
+    ForgetPasswordComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
