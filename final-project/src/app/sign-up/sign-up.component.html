@@ -1,66 +1,78 @@
 <div class="flex justify-center items-center min-h-screen bg-gray-100">
     <div class="w-full max-w-md bg-white p-8 rounded-lg shadow-md">
       <h2 class="text-2xl font-semibold text-center text-gray-800 mb-6">Create a new account</h2>
-  
-      <form action="#" method="POST">
+
+      <form action="#" method="POST" (ngSubmit)="validator()">
         <div class="mb-4">
           <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
-          <input 
-            type="text" 
-            name="name" 
-            id="name" 
-            class="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-            placeholder="Your Full Name" 
-            required 
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Your Full Name"
+            [(ngModel)]="name"
+            (input)="checkName()"
+            required
           />
+          <p style="color:red;">{{nameMsg}}</p>
         </div>
-  
+
         <div class="mb-4">
           <label for="email" class="block text-sm font-medium text-gray-700">Your email</label>
-          <input 
-            type="email" 
-            name="email" 
-            id="email" 
-            class="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-            placeholder="name@company.com" 
-            required 
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="name@company.com"
+            [(ngModel)]="email"
+            (input)="checkEmail()"
+            required
           />
+          <p style="color:red;">{{emailMsg}}</p>
         </div>
-  
+
         <div class="mb-4">
           <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-          <input 
-            type="password" 
-            name="password" 
-            id="password" 
-            class="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-            placeholder="••••••••" 
-            required 
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="••••••••"
+            [(ngModel)]="password"
+            (input)="checkPassword()"
+            required
           />
+          <p style="color:red;">{{passwordMsg}}</p>
         </div>
-  
+
         <div class="mb-6">
           <label for="confirmPassword" class="block text-sm font-medium text-gray-700">Confirm Password</label>
-          <input 
-            type="password" 
-            name="confirmPassword" 
-            id="confirmPassword" 
-            class="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-            placeholder="••••••••" 
-            required 
+          <input
+            type="password"
+            name="confirmPassword"
+            id="confirmPassword"
+            class="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="••••••••"
+            [(ngModel)]="conf_password"
+            (input)="checkPassword_match()"
+            required
           />
+          <p style="color:red;">{{conf_passwordMsg}}</p>
         </div>
-  
-        <button 
-          type="submit" 
+
+        <button
+          type="submit"
           class="w-full p-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
           Sign Up
         </button>
-  
+        <p style="color:red;">{{formMsg}}</p>
+
         <p class="mt-4 text-center text-sm text-gray-600">
           Already have an account? <a href="/app-login" class="text-blue-500 hover:underline">Sign in</a>
         </p>
       </form>
     </div>
   </div>
-  
