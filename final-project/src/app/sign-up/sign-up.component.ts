@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {RouterOutlet, RouterLink, RouterLinkActive} from '@angular/router';
 import {FormsModule} from "@angular/forms";
+import {NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-sign-up',
@@ -9,7 +10,8 @@ import {FormsModule} from "@angular/forms";
     FormsModule,
     RouterOutlet,
     RouterLink,
-    RouterLinkActive
+    RouterLinkActive,
+    NgIf
   ],
   templateUrl: './sign-up.component.html',
   styleUrl: './sign-up.component.css'
@@ -24,15 +26,36 @@ export class SignUpComponent {
   passwordMsg='';
   conf_passwordMsg='';
   formMsg='';
+  isSubmit:boolean=false;
+  fetchedData:string='';
 
+  getServerData(url:string): Promise<any> {
+    return fetch(url).then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP Error: ${response.status} ${response.statusText}`);
+      }
+      return response.json();
+    })
+      .catch((error) => `Failed: ${error.message}`);
+  }
+
+  clickToGetData(){
+    this.getServerData("").then((response)=>{
+      this.fetchedData=JSON.stringify(response);
+      console.log("I am here");
+    });
+  }
+
+  // Validations below
   validator() {
     if(this.nameMsg == '  ' && this.emailMsg == '  ' && this.passwordMsg == '  ' && this.conf_passwordMsg == '  '){
       this.formMsg=''
+      this.isSubmit=true
     } else {
       this.formMsg='Some Credentials are Wrong';
+      this.isSubmit=false;
     }
   }
-
   checkName() {
     if(this.name==''){
       this.nameMsg = 'Name is required.';
