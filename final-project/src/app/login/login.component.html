@@ -1,10 +1,16 @@
-<div class="flex  justify-center items-center min-h-screen bg-gray-100">
-  <div class="w-full sm:max-w-md bg-white p-8 rounded-lg shadow-md p-6 space-y-4 md:space-y-6 sm:p-8">
-    <h2 class="text-2xl font-semibold text-center text-gray-800 mb-6">Log in to your account</h2>
+<div class="flex justify-center items-center min-h-screen bg-gray-100">
+  <div
+    class="w-full sm:max-w-md bg-white p-8 rounded-lg shadow-md p-6 space-y-4 md:space-y-6 sm:p-8"
+  >
+    <h2 class="text-2xl font-semibold text-center text-gray-800 mb-6">
+      Log in to your account
+    </h2>
 
-    <form action="#" method="POST" (ngSubmit)="validator_login()">
+    <form action="#" method="POST" (ngSubmit)="handleSubmit()">
       <div class="mb-4">
-        <label for="email" class="block text-sm font-medium text-gray-700">Your email</label>
+        <label for="email" class="block text-sm font-medium text-gray-700"
+          >Your email</label
+        >
         <input
           type="email"
           name="email"
@@ -15,11 +21,13 @@
           (input)="checkEmail_login()"
           required
         />
-        <p class="text-red-400 text-sm font-bold mt-2">{{emailMsg_login}}</p>
+        <p class="text-red-400 text-sm font-bold mt-2">{{ emailMsg_login }}</p>
       </div>
 
       <div class="mb-6">
-        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+        <label for="password" class="block text-sm font-medium text-gray-700"
+          >Password</label
+        >
         <input
           type="password"
           name="password"
@@ -30,20 +38,36 @@
           (input)="checkPassword_login()"
           required
         />
-        <p class="text-red-400 text-sm font-bold mt-2 ">{{passwordMsg_login}}</p>
+        <p class="text-red-400 text-sm font-bold mt-2">
+          {{ passwordMsg_login }}
+        </p>
       </div>
 
       <div class="flex items-center justify-between mb-6">
-        <a routerLink="/app-forget-password" class="text-sm text-blue-500 hover:underline">Forgot password?</a>
+        <a
+          routerLink="/app-forget-password"
+          class="text-sm text-blue-500 hover:underline"
+          >Forgot password?</a
+        >
       </div>
 
-      <button type="submit" class="w-full p-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <button
+        type="submit"
+        class="w-full p-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      >
         Log In
       </button>
-      <p class="text-red-400 text-sm font-bold mt-2 ">{{formMsg_login}}</p>
+      <p class="text-red-400 text-sm font-bold mt-2">{{ formMsg_login }}</p>
 
       <p class="mt-4 text-center text-sm text-gray-600">
-        Don’t have an account? <a routerLink="/app-sign-up" routerLinkActive="active" ariaCurrentWhenActive="page" class="text-blue-500 hover:underline">Sign up</a>
+        Don’t have an account?
+        <a
+          routerLink="/app-sign-up"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          class="text-blue-500 hover:underline"
+          >Sign up</a
+        >
       </p>
     </form>
   </div>
