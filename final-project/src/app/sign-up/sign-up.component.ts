@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { LocalStorageService } from '../auth.service';
+import { LocalStorageService } from '../../services/localStorage/localStorage.service';
 
 @Component({
   selector: 'app-sign-up',
@@ -78,8 +78,8 @@ export class SignUpComponent {
   checkPassword() {
     if (this.password === '') {
       this.passwordMsg = 'Password is required.';
-    } else if (this.password.length < 8) {
-      this.passwordMsg = 'Password must be at least 8 characters long.';
+    } else if (this.password.length < 4) {
+      this.passwordMsg = 'Password must be at least 4 characters long.';
     } else {
       this.passwordMsg = '';
     }

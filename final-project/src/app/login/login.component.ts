@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { LocalStorageService } from '../auth.service';
+import { LocalStorageService } from '../../services/localStorage/localStorage.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -66,7 +66,7 @@ export class LoginComponent {
   checkPassword_login() {
     if (this.password_login === '') {
       this.passwordMsg_login = 'Password is required.';
-    } else if (this.password_login.length < 8) {
+    } else if (this.password_login.length < 4) {
       this.passwordMsg_login = 'Password must be at least 8 characters long.';
     } else {
       this.passwordMsg_login = '';
