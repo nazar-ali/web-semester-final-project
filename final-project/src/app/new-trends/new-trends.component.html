@@ -1,0 +1,15 @@
+<div class="center_container">
+  <button (click)="get_Title_Price_from_Daraz()">GET DATA FROM DARAZ</button>
+</div>
+
+<div *ngIf="details.length > 0">
+  <h3>Card Details</h3>
+  <ul>
+    <li *ngFor="let card of details">
+      <strong>Headline:</strong> {{ card.productTitle }}<br>
+      <strong>Description:</strong>{{ card.productPrice }}<br><br>
+    </li>
+  </ul>
+</div>
+<p *ngIf="loading">Loading...</p>
+<p *ngIf="errorMessage">{{ errorMessage }}</p>

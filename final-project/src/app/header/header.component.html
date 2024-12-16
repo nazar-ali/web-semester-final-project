@@ -34,31 +34,34 @@
         <!-- Regular Links -->
         <a
           routerLink="/"
-          class="text-gray-600 hover:text-blue-500 font-medium px-3 py-2 rounded-md"
+          class="text-gray-600 hover:text-blue-500 font-medium px-3 py-2 rounded-md cursor-pointer"
         >
           Home
         </a>
         <a
-          routerLink="/about"
-          class="text-gray-600 hover:text-blue-500 font-medium px-3 py-2 rounded-md"
+          routerLink="/app-new-trends"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          (click)="newTrendsClick()"
+          class="text-gray-600 hover:text-blue-500 font-medium px-3 py-2 rounded-md cursor-pointer"
         >
           New Trends
         </a>
         <a
           routerLink="/services"
-          class="text-gray-600 hover:text-blue-500 font-medium px-3 py-2 rounded-md"
+          class="text-gray-600 hover:text-blue-500 font-medium px-3 py-2 rounded-md cursor-pointer"
         >
           CheckOut
         </a>
         <a
           routerLink="/"
-          class="text-gray-600 hover:text-blue-500 font-medium px-3 py-2 rounded-md"
+          class="text-gray-600 hover:text-blue-500 font-medium px-3 py-2 rounded-md cursor-pointer"
         >
           Contact
         </a>
         <a
           routerLink="/"
-          class="text-gray-600 hover:text-blue-500 font-medium px-3 py-2 rounded-md"
+          class="text-gray-600 hover:text-blue-500 font-medium px-3 py-2 rounded-md cursor-pointer"
         >
           Cart
         </a>
