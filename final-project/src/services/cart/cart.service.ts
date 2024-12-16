@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { CartItem } from '../../app/shared/models/CartItem';
+import {cardDatails} from "../../app/shared/models/CardDetails";
 
 @Injectable({
   providedIn: 'root',
@@ -17,6 +18,10 @@ export class CartService {
 
   addToCart(item: CartItem): Observable<CartItem> {
     return this.http.post<CartItem>(`${this.apiUrl}/cartDetail`, item);
+  }
+
+  getCardDetail(): Observable<cardDatails[]> {
+    return this.http.get<cardDatails[]>(`${this.apiUrl}/cartDetail`);
   }
 
   removeFromCart(id: number): Observable<void> {

@@ -1,22 +1,30 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, Input, OnInit } from '@angular/core';
 import { CartService } from '../../services/cart/cart.service';
 import { CartItem } from '../shared/models/CartItem';
 import { NgFor, NgIf } from '@angular/common';
+import { AddToCartComponent } from "../add-to-cart/add-to-cart.component";
+import {cardDatails} from "../shared/models/CardDetails";
+import {Observable} from "rxjs";
+
 @Component({
   selector: 'app-cart',
   standalone: true,
-  imports: [NgFor, NgIf],
+  imports: [NgFor, NgIf, AddToCartComponent],
   templateUrl: './cart.component.html',
-  styleUrl: './cart.component.css',
+  styleUrls: ['./cart.component.css'], // Note: Corrected styleUrl to styleUrls
 })
 export class CartComponent implements OnInit {
+  @Input() title!: string;
+  @Input() price!: number;
+
   cart: CartItem[] = [];
+  cardDetails: cardDatails[] = [];
 
   constructor(private cartService: CartService) {}
 
   ngOnInit(): void {
-    this.loadCartItems();
+    this.loadCartItems(); // Fetch card details
+    this.getCardDetail()
   }
 
   loadCartItems(): void {
@@ -25,12 +33,19 @@ export class CartComponent implements OnInit {
     });
   }
 
-  addToCart(product: CartItem): void {
+  getCardDetail(): void {
+    this.cartService.getCardDetail().subscribe((data) => {
+      this.cardDetails = data;
+    }); // Fetch card details
+  }
+
+
+  addToCart(products:CartItem): void {
     const newItem: CartItem = {
-      name: product.name,
-      price: product.price,
-      category: product.category,
-      image: product.image,
+      name: products.name,
+      price: products.price,
+      category:products.category ,
+      image: products.image,
     };
     this.cartService.addToCart(newItem).subscribe((addedItem) => {
       this.cart.push(addedItem);
