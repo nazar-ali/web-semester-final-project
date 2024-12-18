@@ -27,10 +27,7 @@
       </button>
 
       <!-- Navbar Links -->
-      <div
-        class="hidden md:flex md:space-x-4"
-        id="navbar-menu"
-      >
+      <div class="hidden md:flex md:space-x-4" id="navbar-menu">
         <!-- Regular Links -->
         <a
           routerLink="/"
@@ -59,13 +56,17 @@
         >
           Contact
         </a>
-        <a
-          routerLink="/"
-          class="text-gray-600 hover:text-blue-500 font-medium px-3 py-2 rounded-md cursor-pointer"
-        >
-          Cart
-        </a>
+        <button (click)="toggleCart()" class="px-4 font-semibold">Cart</button>
       </div>
+
+      <!-- Cart Sidebar -->
+      <!-- <div
+        class="fixed top-0 bg-gray-300 right-0 w-80 h-full text-2xl bg-white shadow-lg transform transition-transform duration-300"
+        [ngClass]="{ 'translate-x-0': isOpen, 'translate-x-full': !isOpen }"
+      > -->
+      <app-cart-sidebar [isOpen]="isOpen"></app-cart-sidebar>
+      <!-- Corrected binding -->
+      <!-- </div> -->
     </div>
   </div>
 </nav>

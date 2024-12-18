@@ -1,5 +1,12 @@
-<div *ngFor="let detail of cardDetails">
-  <h3>{{ detail.name }}</h3>
-  <p>Price: ${{ detail.price }}</p>
-  <p>Category: {{ detail.category }}</p>
-</div>
+<button
+  (click)="onAddToCart()"
+  class="mt-2 w-full bg-green-600 text-white text-sm font-medium py-2 rounded hover:bg-green-700"
+>
+  Add to Cart
+</button>
+
+<app-cart-sidebar
+  [cartItems]="cartItems"
+  [isOpen]="isSidebarOpen"
+  (toggleSidebar)="toggleSidebar()"
+></app-cart-sidebar>

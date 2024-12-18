@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { CartComponent } from '../cart/cart.component';
+import { CartComponent } from '../../app/cart/cart.component';
 // import { HeaderComponent } from '../header/header.component';
 import { NgFor } from '@angular/common';
-import {HeaderComponent} from "../header/header.component";
+import { HeaderComponent } from '../header/header.component';
 @Component({
   selector: 'app-dash-board',
   imports: [CartComponent, NgFor, HeaderComponent],
@@ -40,9 +40,7 @@ export class DashboardComponent {
       Price: '40$',
     },
   ];
-  pushToCart() {
-
-  }
+  pushToCart() {}
   ngOnInit(): void {
     console.log(this.slides);
   }

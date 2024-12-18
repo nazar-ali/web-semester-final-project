@@ -4,7 +4,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 import { DashboardComponent } from './dash-board/dash-board.component';
 import { AuthGuard } from '../guard/auth.guard';
-import {NewTrendsComponent} from "./new-trends/new-trends.component";
+import { NewTrendsComponent } from './new-trends/new-trends.component';
 
 export const routes: Routes = [
   { path: 'app-login', component: LoginComponent },
@@ -14,8 +14,8 @@ export const routes: Routes = [
   {
     path: 'app-dash-board',
     component: DashboardComponent,
-    canActivate: [AuthGuard],
+    // canActivate: [AuthGuard],
   },
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
-  { path: '**', redirectTo: '/login' },
+  { path: '', redirectTo: '/app-sign-up', pathMatch: 'full' },
+  // { path: '**', redirectTo: '/app-login' },
 ];

@@ -1,0 +1,39 @@
+<!-- CartSidebarComponent Template -->
+<div
+  class="fixed top-0 right-0 w-80 h-full bg-white shadow-lg transform transition-transform duration-300"
+  [ngClass]="{ 'translate-x-0': isOpen, 'translate-x-full': !isOpen }"
+>
+  <div class="p-4 border-b">
+    <h3 class="text-lg font-bold">Your Cart</h3>
+    <button
+      class="absolute top-2 right-2 text-gray-700"
+      (click)="closeSidebar()"
+    >
+      &times;
+    </button>
+  </div>
+
+  <div *ngIf="cartItems.length > 0; else emptyCart" class="p-4">
+    <div
+      *ngFor="let item of cartItems; let i = index"
+      class="border-b py-2 flex items-center justify-between"
+    >
+      <div>
+        <p class="font-semibold">{{ item.name }}</p>
+        <p class="text-gray-600">{{ item.category }}</p>
+        <p class="font-bold">${{ item.price }}</p>
+      </div>
+      <button
+        class="text-red-600"
+        (click)="onRemoveItem(i)"
+        title="Remove Item"
+      >
+        Delete
+      </button>
+    </div>
+  </div>
+
+  <ng-template #emptyCart>
+    <p class="p-4 text-center text-gray-500">Your cart is empty!</p>
+  </ng-template>
+</div>

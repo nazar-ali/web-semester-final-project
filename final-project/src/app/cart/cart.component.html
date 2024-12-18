@@ -1,29 +1,32 @@
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 p-4">
-  <div
-    *ngFor="let product of cart"
-    class="max-w-sm mt-10 bg-white shadow-lg rounded-lg overflow-hidden"
-  >
-    <img
-      class="w-full h-32 object-cover"
-      [src]="product.image"
-      alt="{{ product.name }}"
-    />
-    <div class="p-4">
-      <h2 class="text-lg font-semibold">{{ product.name }}</h2>
-      <p class="text-gray-500 text-sm">Category: {{ product.category }}</p>
-      <p class="text-xl font-bold text-gray-800">${{ product.price }}</p>
-      <button
-        (click)="addToCart(product)"
-        class="mt-4 w-full bg-blue-600 text-white text-sm font-medium py-2 rounded hover:bg-blue-700"
-      >
-        Add to Cart
-      </button>
+<div *ngIf="loading" class="spinner">Loading...</div>
+<div *ngIf="!loading">
+  <!-- Product Grid -->
+  <div class="p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-4">
+    <div
+      *ngFor="let product of cart"
+      class="max-w-sm mt-10 bg-white shadow-lg rounded-lg overflow-hidden"
+    >
+      <img
+        class="w-full h-32 object-cover"
+        [src]="product.image"
+        alt="{{ product.name }}"
+      />
+      <div class="p-4">
+        <h2 class="text-lg font-semibold">{{ product.name }}</h2>
+        <p class="text-gray-500 text-sm">Category:{{ product.category }}</p>
+        <p class="text-xl font-bold text-gray-800">${{ product.price }}</p>
 
-      <div class="product-list">
-        <app-add-to-cart [cardDetails]="cardDetails"></app-add-to-cart>
+        <div class="product-list mt-4">
+          <app-add-to-cart
+            [product]="product"
+            (addToCartEvent)="addToCart($event)"
+          ></app-add-to-cart>
+        </div>
       </div>
     </div>
   </div>
+
+  <!-- Cart Sidebar -->
 </div>
 
 <!-- Cart Box -->

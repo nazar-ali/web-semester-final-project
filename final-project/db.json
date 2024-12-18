@@ -62,6 +62,27 @@
       "category": "Wearables",
       "price": 129.99,
       "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Noise Cancelling Earbuds",
+      "category": "Wearables",
+      "price": 129.99,
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Noise Cancelling Earbuds",
+      "category": "Wearables",
+      "price": 129.99,
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Noise Cancelling Earbuds",
+      "category": "Wearables",
+      "price": 129.99,
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
     }
   ],
   "cartDetail": [
@@ -136,6 +157,860 @@
       "name": "Bluetooth Speaker",
       "price": 49.99,
       "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "b330",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "983f",
+      "name": "Mechanical Keyboard",
+      "price": 79.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "aeb4",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "f56c",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "a344",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "c516",
+      "name": "Wireless Headphones",
+      "price": 99.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "e0b2",
+      "name": "Wireless Headphones",
+      "price": 99.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "ef6b",
+      "name": "Mechanical Keyboard",
+      "price": 79.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "cb5d",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "9e38",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "145e",
+      "name": "Wireless Headphones",
+      "price": 99.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "180c",
+      "name": "Wireless Headphones",
+      "price": 99.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "fd83",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "637b",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "8d80",
+      "name": "Noise Cancelling Earbuds",
+      "price": 129.99,
+      "category": "Wearables",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "305b",
+      "name": "Portable SSD",
+      "price": 149.99,
+      "category": "Storage",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "5014",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "5b91",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "2d15",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "f87f",
+      "name": "Portable SSD",
+      "price": 149.99,
+      "category": "Storage",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "a941",
+      "name": "Mechanical Keyboard",
+      "price": 79.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "5625",
+      "name": "Portable SSD",
+      "price": 149.99,
+      "category": "Storage",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "8ffe",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "3e46",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "6348",
+      "name": "Mechanical Keyboard",
+      "price": 79.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "6",
+      "name": "USB-C Hub",
+      "category": "Accessories",
+      "price": 29.99,
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Mechanical Keyboard",
+      "category": "Accessories",
+      "price": 79.99,
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "623e",
+      "name": "Noise Cancelling Earbuds",
+      "price": 129.99,
+      "category": "Wearables",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "93b6",
+      "name": "Portable SSD",
+      "price": 149.99,
+      "category": "Storage",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "78a4",
+      "name": "Mechanical Keyboard",
+      "price": 79.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "655f",
+      "name": "Smart Watch",
+      "price": 199.99,
+      "category": "Wearables",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "6bfb",
+      "name": "Noise Cancelling Earbuds",
+      "price": 129.99,
+      "category": "Wearables",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "ce0f",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "74ef",
+      "name": "Smart Watch",
+      "price": 199.99,
+      "category": "Wearables",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "cde4",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "1",
+      "name": "Wireless Headphones",
+      "category": "Electronics",
+      "price": 99.99,
+      "image": "image/path1.jpg"
+    },
+    {
+      "id": "1",
+      "name": "Wireless Headphones",
+      "category": "Electronics",
+      "price": 99.99,
+      "image": "image/path1.jpg"
+    },
+    {
+      "id": "2226",
+      "name": "Mechanical Keyboard",
+      "price": 79.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "ccf0",
+      "name": "Mechanical Keyboard",
+      "price": 79.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "2e81",
+      "name": "Mechanical Keyboard",
+      "price": 79.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "c061",
+      "name": "Mechanical Keyboard",
+      "price": 79.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "23a3",
+      "name": "Mechanical Keyboard",
+      "price": 79.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "2a07",
+      "name": "Portable SSD",
+      "price": 149.99,
+      "category": "Storage",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "6f3f",
+      "name": "HD Webcam",
+      "price": 59.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "7fda",
+      "name": "HD Webcam",
+      "price": 59.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "1b0d",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "64a2",
+      "name": "Mechanical Keyboard",
+      "price": 79.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "56e8",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "d71c",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "e9cc",
+      "name": "USB-C Hub",
+      "price": 29.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "1b3a",
+      "name": "Smart Watch",
+      "price": 199.99,
+      "category": "Wearables",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "f8da",
+      "name": "Gaming Mouse",
+      "price": 39.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "808f",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "1260",
+      "name": "Smart Watch",
+      "price": 199.99,
+      "category": "Wearables",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "8fb1",
+      "name": "Mechanical Keyboard",
+      "price": 79.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "abc0",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "0724",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "1f03",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "beb1",
+      "name": "Portable SSD",
+      "price": 149.99,
+      "category": "Storage",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "4c1b",
+      "name": "Mechanical Keyboard",
+      "price": 79.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "ee68",
+      "name": "Mechanical Keyboard",
+      "price": 79.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "c929",
+      "name": "Mechanical Keyboard",
+      "price": 79.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "e86b",
+      "name": "USB-C Hub",
+      "price": 29.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "9e4f",
+      "name": "Noise Cancelling Earbuds",
+      "price": 129.99,
+      "category": "Wearables",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "10ba",
+      "name": "Portable SSD",
+      "price": 149.99,
+      "category": "Storage",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "3d12",
+      "name": "Portable SSD",
+      "price": 149.99,
+      "category": "Storage",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "f26e",
+      "name": "HD Webcam",
+      "price": 59.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "46e8",
+      "name": "Wireless Headphones",
+      "price": 99.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "c47b",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "c9e5",
+      "name": "Wireless Headphones",
+      "price": 99.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "b76b",
+      "name": "USB-C Hub",
+      "price": 29.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "2a27",
+      "name": "HD Webcam",
+      "price": 59.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "beb2",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "779d",
+      "name": "Wireless Headphones",
+      "price": 99.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "c059",
+      "name": "Gaming Mouse",
+      "price": 39.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "75c3",
+      "name": "Smart Watch",
+      "price": 199.99,
+      "category": "Wearables",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "7b31",
+      "name": "Wireless Headphones",
+      "price": 99.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "b7be",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "3370",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "84f9",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "0a88",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "3f00",
+      "name": "Smart Watch",
+      "price": 199.99,
+      "category": "Wearables",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "7ce2",
+      "name": "Smart Watch",
+      "price": 199.99,
+      "category": "Wearables",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "8e69",
+      "name": "Gaming Mouse",
+      "price": 39.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "f78f",
+      "name": "Gaming Mouse",
+      "price": 39.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "e4aa",
+      "name": "Smart Watch",
+      "price": 199.99,
+      "category": "Wearables",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "242e",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "3104",
+      "name": "USB-C Hub",
+      "price": 29.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "6b43",
+      "name": "Gaming Mouse",
+      "price": 39.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "ff34",
+      "name": "Smart Watch",
+      "price": 199.99,
+      "category": "Wearables",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "45f3",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "f096",
+      "name": "Gaming Mouse",
+      "price": 39.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "0801",
+      "name": "USB-C Hub",
+      "price": 29.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "d816",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "2931",
+      "name": "Gaming Mouse",
+      "price": 39.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "464b",
+      "name": "Portable SSD",
+      "price": 149.99,
+      "category": "Storage",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "5ceb",
+      "name": "HD Webcam",
+      "price": 59.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "d661",
+      "name": "Noise Cancelling Earbuds",
+      "price": 129.99,
+      "category": "Wearables",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "ea51",
+      "name": "Smart Watch",
+      "price": 199.99,
+      "category": "Wearables",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "553f",
+      "name": "Smart Watch",
+      "price": 199.99,
+      "category": "Wearables",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "b548",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "1409",
+      "name": "Portable SSD",
+      "price": 149.99,
+      "category": "Storage",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "f688",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "6ff0",
+      "name": "Mechanical Keyboard",
+      "price": 79.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "cdd1",
+      "name": "Portable SSD",
+      "price": 149.99,
+      "category": "Storage",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "42f3",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "d858",
+      "name": "Mechanical Keyboard",
+      "price": 79.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "20e8",
+      "name": "Gaming Mouse",
+      "price": 39.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "f748",
+      "name": "Smart Watch",
+      "price": 199.99,
+      "category": "Wearables",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "3eeb",
+      "name": "Gaming Mouse",
+      "price": 39.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "1e3e",
+      "name": "Gaming Mouse",
+      "price": 39.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "2c3c",
+      "name": "Gaming Mouse",
+      "price": 39.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "fe7d",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "cb14",
+      "name": "Wireless Headphones",
+      "price": 99.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "37d7",
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "6b8a",
+      "name": "Gaming Mouse",
+      "price": 39.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "5ffa",
+      "name": "Smart Watch",
+      "price": 199.99,
+      "category": "Wearables",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "0ad7",
+      "name": "USB-C Hub",
+      "price": 29.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "2f7f",
+      "name": "USB-C Hub",
+      "price": 29.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "e04e",
+      "name": "USB-C Hub",
+      "price": 29.99,
+      "category": "Accessories",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "76b1",
+      "name": "Portable SSD",
+      "price": 149.99,
+      "category": "Storage",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": "9538",
+      "name": "USB-C Hub",
+      "price": 29.99,
+      "category": "Accessories",
       "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
     }
   ]
