@@ -1,0 +1,11 @@
+{
+  "/daraz": {
+    "target": "https://www.daraz.pk/#hp-flash-sale",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/daraz": ""
+    },
+    "logLevel": "debug"
+  }
+}

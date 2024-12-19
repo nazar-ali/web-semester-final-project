@@ -8,7 +8,7 @@ import * as cheerio from 'cheerio';
 })
 export class NewTrendsService {
 
-  private url='https://www.daraz.pk/#hp-flash-sale';
+  private url='/daraz/';
   constructor(private http: HttpClient) {}
 
   getData():Observable<{ productTitle: string; productPrice: string }[]> {

@@ -21,7 +21,7 @@ export class NewTrendsComponent {
 
   get_Title_Price_from_Daraz(): void {
     this.loading = true;
-
+    console.log("getting data")
     this.NewTrendsService.getData().subscribe({
       next: (data) => {
         this.details = data;
