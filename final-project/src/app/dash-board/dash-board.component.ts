@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { CartComponent } from '../../app/cart/cart.component';
+import { CartComponent } from '../cart/cart.component';
+import { ChangeDetectorRef } from '@angular/core';
 // import { HeaderComponent } from '../header/header.component';
-import { NgFor } from '@angular/common';
+import {NgFor} from '@angular/common';
 import { HeaderComponent } from '../header/header.component';
 @Component({
   selector: 'app-dash-board',
@@ -14,43 +15,53 @@ import { HeaderComponent } from '../header/header.component';
 export class DashboardComponent {
   currentYear: number = new Date().getFullYear();
 
-  constructor(private router: Router) {}
+  constructor(private router: Router,
+  private cdr: ChangeDetectorRef) {}
 
   logout() {
     localStorage.removeItem('userSignupData');
-    this.router.navigate(['/login']);
+    this.router.navigate(['/app-login']);
   }
   slides = [
     {
-      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ9ue0x4ndDd_KXFYivZsajFdBWDq1oWfjSw&s',
+      img: 'https://cdn.mos.cms.futurecdn.net/yDn3ZSXu9eSBxmXQDZ4PCF-1200-80.jpg',
       title: 'Iphone 16',
       greentext: 'Highlight',
-      Price: '1000$',
+      Price: '$1000',
     },
     {
-      img: '../../assets/img/brand2.png',
+      img: 'https://via.placeholder.com/400x300',
       title: 'Laptop',
       greentext: 'Highlight',
-      Price: '700$',
+      Price: '$700',
     },
     {
-      img: '../../assets/img/h4-slide3.png',
+      img: 'https://via.placeholder.com/400x300',
       title: 'Pillow',
       greentext: 'Highlight',
-      Price: '40$',
+      Price: '$40',
     },
   ];
-  pushToCart() {}
-  ngOnInit(): void {
-    console.log(this.slides);
-  }
+
   currentIndex = 0;
 
-  nextSlide() {
-    this.currentIndex = (this.currentIndex + 1) % this.slides.length; // Loop to the beginning
+  getTransformStyle(): string {
+    return `translateX(-${this.currentIndex * 100}%)`;
   }
-  prevSlide() {
-    this.currentIndex =
-      (this.currentIndex - 1 + this.slides.length) % this.slides.length; // Loop to the end
+
+  nextSlide(): void {
+    if (this.currentIndex < this.slides.length - 1) {
+      this.currentIndex++;
+    } else {
+      this.currentIndex = 0; // Loop back to the first slide
+    }
+  }
+
+  prevSlide(): void {
+    if (this.currentIndex > 0) {
+      this.currentIndex--;
+    } else {
+      this.currentIndex = this.slides.length - 1; // Loop back to the last slide
+    }
   }
 }

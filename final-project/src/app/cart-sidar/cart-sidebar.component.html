@@ -13,7 +13,7 @@
     </button>
   </div>
 
-  <div *ngIf="cartItems.length > 0; else emptyCart" class="p-4">
+  <div *ngIf="cartItems.length >= 0; else emptyCart" class="p-4">
     <div
       *ngFor="let item of cartItems; let i = index"
       class="border-b py-2 flex items-center justify-between"

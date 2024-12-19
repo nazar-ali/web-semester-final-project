@@ -38,7 +38,7 @@ export class AddToCartComponent {
       (item) => item.id === this.product.id
     );
 
-    if (existingProduct) {
+    if (!existingProduct) {
       this.cartItems.push({ ...this.product });
     } else {
       this.cartItems.push(this.product);

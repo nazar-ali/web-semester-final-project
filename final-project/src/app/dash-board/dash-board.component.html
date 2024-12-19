@@ -1,56 +1,39 @@
-<section>
+<nav>
   <app-header></app-header>
-  <div class="flex-col-4">
-    <div class="flex -z-10 relative">
-      <div class="slider-area overflow-hidden relative">
-        <div
-          class="flex transition-transform duration-1000 ease-in-out"
-          [style.transform]="'translateX(-' + currentIndex * 100 + '%)'"
-        >
-          <div
-            *ngFor="let slide of slides"
-            class="min-w-[80%] flex justify-center items-center bg-gray-100"
-          >
-            <div class="carousel-item flex p-8 gap-10 top-10 ml-20 text-center">
-              <img
-                [src]="slide.img"
-                alt="Slide"
-                class="min-w-full min-h-[70%] rounded-lg"
-              />
-              <div class="caption-group1 mt-14">
-                <h2 class="caption title text-2xl font-bold">
-                  {{ slide.title }}
-                  <span class="text-green-600"> {{ slide.greentext }}</span>
-                </h2>
-                <h4 class="caption subtitle text-lg text-gray-500">
-                  {{ slide.Price }}
-                </h4>
-                <a
-                  class="caption button-radius mt-4 inline-block px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-                  routerLink="/products"
-                  (click)="pushToCart()"
-                >
-                  <span class="icon"></span>Add to Cart
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+</nav>
 
-        <button
-          (click)="prevSlide()"
-          class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-200 hover:bg-gray-300 text-gray-800 p-2 rounded-full shadow"
-        >
-          ❮
-        </button>
-        <button
-          (click)="nextSlide()"
-          class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-200 hover:bg-gray-300 text-gray-800 p-2 rounded-full shadow"
-        >
-          ❯
-        </button>
+<div class="relative  overflow-hidden">
+  <div
+    class="flex  transition-transform duration-500"
+    [style.transform]="getTransformStyle()"
+  >
+    <div
+      *ngFor="let slide of slides"
+      class="flex-shrink-0 w-full h-full bg-cover bg-center"
+      [style.backgroundImage]="'url(' + slide.img + ')'"
+    >
+      <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-center">
+        <h3 class="text-white text-xl font-semibold">{{ slide.title }}</h3>
+        <p class="text-green-400 text-sm">{{ slide.greentext }}</p>
+        <p class="text-white text-2xl font-bold">{{ slide.Price }}</p>
       </div>
     </div>
-    <app-cart />
   </div>
+
+  <!-- Navigation -->
+  <button
+    (click)="prevSlide()"
+    class="absolute top-1/2 left-0 transform -translate-y-1/2 px-4 py-2 text-white bg-black bg-opacity-50 hover:bg-opacity-70"
+  >
+    &#60;
+  </button>
+  <button
+    (click)="nextSlide()"
+    class="absolute top-1/2 right-0 transform -translate-y-1/2 px-4 py-2 text-white bg-black bg-opacity-50 hover:bg-opacity-70"
+  >
+    &#62;
+  </button>
+</div>
+<section>
+  <app-cart></app-cart>
 </section>
