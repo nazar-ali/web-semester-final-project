@@ -5,16 +5,20 @@ import { ForgetPasswordComponent } from './forget-password/forget-password.compo
 import { DashboardComponent } from './dash-board/dash-board.component';
 import { AuthGuard } from '../guard/auth.guard';
 import { NewTrendsComponent } from './new-trends/new-trends.component';
+import { FooterComponent } from './footer/footer.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 export const routes: Routes = [
   { path: 'app-login', component: LoginComponent },
   { path: 'app-sign-up', component: SignUpComponent },
   { path: 'app-forget-password', component: ForgetPasswordComponent },
   { path: 'app-new-trends', component: NewTrendsComponent },
+  { path: 'app-footer', component: FooterComponent },
+  { path: 'app-checkout', component: CheckoutComponent },
   {
     path: 'app-dash-board',
     component: DashboardComponent,
-    // canActivate: [AuthGuard],
+    canActivate: [AuthGuard],
   },
   { path: '', redirectTo: '/app-sign-up', pathMatch: 'full' },
   // { path: '**', redirectTo: '/app-login' },

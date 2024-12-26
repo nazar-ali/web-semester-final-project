@@ -3,4 +3,5 @@ export interface cardDatails {
   name: string;
   price: number;
   category: string;
+  image: string;
 }

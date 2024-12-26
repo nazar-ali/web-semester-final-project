@@ -1,17 +1,16 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs";
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 import * as cheerio from 'cheerio';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class NewTrendsService {
-
-  private url='/daraz/';
+  private url = '/daraz/';
   constructor(private http: HttpClient) {}
 
-  getData():Observable<{ productTitle: string; productPrice: string }[]> {
+  getData(): Observable<{ productTitle: string; productPrice: string }[]> {
     return new Observable((observer) => {
       console.log('Service: Starting HTTP request to', this.url);
 
@@ -26,13 +25,13 @@ export class NewTrendsService {
           const productPrices: string[] = [];
 
           // Find all card headlines
-          $('[class="fs-card-title"]').each((_, element) => {
+          $('[class="fs-card-title two-line-clamp"]').each((_, element) => {
             const headline = $(element).text().trim();
             productTitles.push(headline);
           });
 
           // Find all card descriptions
-          $('[class="price"]').each((_, element) => {
+          $('[class="price]').each((_, element) => {
             const description = $(element).text().trim();
             productPrices.push(description);
           });
@@ -58,7 +57,7 @@ export class NewTrendsService {
         },
         complete: () => {
           console.log('Service: HTTP request complete');
-        }
+        },
       });
     });
   }

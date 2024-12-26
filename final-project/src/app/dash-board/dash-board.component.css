@@ -1,12 +1,17 @@
-.carousel-container {
-  overflow: hidden; /* Prevent content from spilling out */
-}
-
-.carousel-track {
-  display: flex; /* Keep items in a horizontal row */
-  transition: transform 1s ease-in-out; /* Smooth transition */
+/* .carousel-container {
+  position: relative;
+  width: 100%;
+  z-index: -10; 
 }
 
 .carousel-item {
-  min-width: 100%; /* Each item takes the full width of the container */
+  display: none;
 }
+
+.carousel-item.block {
+  display: block;
+}
+
+.carousel-item .btn-circle {
+  z-index: 20;
+} */

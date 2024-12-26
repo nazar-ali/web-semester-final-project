@@ -9,7 +9,7 @@ import { cardDatails } from '../../app/shared/models/CardDetails';
 })
 export class CartService {
   private apiUrl = 'http://localhost:3000';
-  search: any;
+  cart$: any;
 
   constructor(private http: HttpClient) {}
 
@@ -26,7 +26,7 @@ export class CartService {
   }
 
   removeFromCart(id: number): Observable<void> {
-    return this.http.delete<void>(`${this.apiUrl}/${id}`);
+    return this.http.delete<void>(`${this.apiUrl}/cartDetail/${id}`);
   }
 
   clearCart(): Observable<void> {

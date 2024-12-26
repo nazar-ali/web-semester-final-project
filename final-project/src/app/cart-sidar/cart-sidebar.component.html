@@ -1,6 +1,6 @@
 <!-- CartSidebarComponent Template -->
 <div
-  class="fixed top-0 right-0 w-80 h-full bg-white shadow-lg transform transition-transform duration-300"
+  class="fixed top-0 text-black z-10 right-0 w-80 min-h-full bg-white shadow-lg transform transition-transform duration-300"
   [ngClass]="{ 'translate-x-0': isOpen, 'translate-x-full': !isOpen }"
 >
   <div class="p-4 border-b">
@@ -13,7 +13,7 @@
     </button>
   </div>
 
-  <div *ngIf="cartItems.length >= 0; else emptyCart" class="p-4">
+  <div *ngIf="cartItems.length > 0; else emptyCart" class="p-4">
     <div
       *ngFor="let item of cartItems; let i = index"
       class="border-b py-2 flex items-center justify-between"
@@ -23,17 +23,17 @@
         <p class="text-gray-600">{{ item.category }}</p>
         <p class="font-bold">${{ item.price }}</p>
       </div>
-      <button
-        class="text-red-600"
-        (click)="onRemoveItem(i)"
-        title="Remove Item"
-      >
+      <button class="text-red-600" (click)="removeItem(i)" title="Remove Item">
         Delete
       </button>
     </div>
+    <p class="font-bold text-lg">
+      Total Amount:
+      <span class="text-indigo-600">${{ calculateTotal() }}</span>
+    </p>
   </div>
-
+  <app-checkout (calculateTotal)="calculateTotal()"></app-checkout>
   <ng-template #emptyCart>
-    <p class="p-4 text-center text-gray-500">Your cart is empty!</p>
+    <p class="p-4 text-center text-black text-gray-500">Your cart is empty!</p>
   </ng-template>
 </div>

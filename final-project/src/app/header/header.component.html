@@ -1,72 +1,65 @@
-<nav class="bg-white border-b border-gray-200">
+<nav
+  class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white shadow-md"
+>
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
       <!-- Brand/Logo -->
-      <a href="#" class="text-2xl font-bold text-gray-800">Our Store</a>
-
-      <!-- Hamburger Menu Button -->
-      <button
-        class="inline-flex items-center p-2 text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <svg
-          class="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16m-7 6h7"
-          ></path>
-        </svg>
-      </button>
+      <a href="#" class="text-2xl font-bold">Our Store</a>
 
       <!-- Navbar Links -->
-      <div class="hidden md:flex md:space-x-4" id="navbar-menu">
-        <!-- Regular Links -->
+      <div class="hidden absolute right-0 mr-20 md:flex md:space-x-4">
         <a
-          routerLink="/"
-          class="text-gray-600 hover:text-blue-500 font-medium px-3 py-2 rounded-md cursor-pointer"
+          routerLink="/app-login"
+          class="hover:text-blue-400 font-medium px-3 py-2 rounded-md cursor-pointer"
         >
-          Home
+          Log Out
         </a>
         <a
           routerLink="/app-new-trends"
           routerLinkActive="active"
           ariaCurrentWhenActive="page"
-          (click)="newTrendsClick()"
-          class="text-gray-600 hover:text-blue-500 font-medium px-3 py-2 rounded-md cursor-pointer"
+          class="hover:text-blue-400 font-medium px-3 py-2 rounded-md cursor-pointer"
         >
           New Trends
         </a>
         <a
-          routerLink="/services"
-          class="text-gray-600 hover:text-blue-500 font-medium px-3 py-2 rounded-md cursor-pointer"
+          routerLink="/app-checkout"
+          class="hover:text-blue-400 font-medium px-3 py-2 rounded-md cursor-pointer"
         >
           CheckOut
         </a>
         <a
-          routerLink="/"
-          class="text-gray-600 hover:text-blue-500 font-medium px-3 py-2 rounded-md cursor-pointer"
+          href="/app-footer"
+          class="hover:text-blue-400 font-medium px-3 py-2 rounded-md cursor-pointer"
         >
           Contact
         </a>
-        <button (click)="toggleCart()" class="px-4 font-semibold">Cart</button>
+        <div class="relative mt-2">
+          <button
+            (click)="toggleCart()"
+            class="px-4 flex hover:text-blue-400 font-semibold"
+          >
+            Cart
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-10 h-6 text-yellow-600 cursor-pointer"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="yellow"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 3h18l-2 13H5L3 3zm3 14a2 2 0 100 4 2 2 0 000-4zm10 0a2 2 0 100 4 2 2 0 000-4z"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
 
       <!-- Cart Sidebar -->
-      <!-- <div
-        class="fixed top-0 bg-gray-300 right-0 w-80 h-full text-2xl bg-white shadow-lg transform transition-transform duration-300"
-        [ngClass]="{ 'translate-x-0': isOpen, 'translate-x-full': !isOpen }"
-      > -->
       <app-cart-sidebar [isOpen]="isOpen"></app-cart-sidebar>
-      <!-- Corrected binding -->
-      <!-- </div> -->
     </div>
   </div>
 </nav>

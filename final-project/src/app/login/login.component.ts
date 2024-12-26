@@ -67,7 +67,7 @@ export class LoginComponent {
     if (this.password_login === '') {
       this.passwordMsg_login = 'Password is required.';
     } else if (this.password_login.length < 4) {
-      this.passwordMsg_login = 'Password must be at least 8 characters long.';
+      this.passwordMsg_login = 'Password must be at least 4 characters long.';
     } else {
       this.passwordMsg_login = '';
     }

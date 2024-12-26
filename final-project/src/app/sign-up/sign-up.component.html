@@ -50,7 +50,7 @@
           class="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           placeholder="••••••••"
           [(ngModel)]="password"
-          (blur)="checkPassword()"
+          (input)="checkPassword()"
           required
         />
         <p class="text-red-400 text-sm font-bold mt-2">{{ passwordMsg }}</p>
@@ -69,7 +69,7 @@
           class="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           placeholder="••••••••"
           [(ngModel)]="confirmPassword"
-          (blur)="checkPasswordMatch()"
+          (input)="checkPasswordMatch()"
           required
         />
         <p class="text-red-400 text-sm font-bold mt-2">

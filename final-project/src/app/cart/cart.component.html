@@ -1,10 +1,10 @@
-<div *ngIf="loading" class="spinner">Loading...</div>
 <div *ngIf="!loading">
-  <!-- Product Grid -->
-  <div class="p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-4">
+  <div
+    class="p-14 grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-4 p-4 relative"
+  >
     <div
       *ngFor="let product of cart"
-      class="max-w-sm mt-10 bg-white shadow-lg rounded-lg overflow-hidden"
+      class="max-w-sm mt-10 bg-white lg:drop-shadow-2xl md:drop-shadow-xl rounded-xl overflow-hidden"
     >
       <img
         class="w-full h-32 object-cover"
@@ -13,47 +13,25 @@
       />
       <div class="p-4">
         <h2 class="text-lg font-semibold">{{ product.name }}</h2>
-        <p class="text-gray-500 text-sm">Category:{{ product.category }}</p>
+        <p class="text-gray-500 text-sm">Category: {{ product.category }}</p>
         <p class="text-xl font-bold text-gray-800">${{ product.price }}</p>
 
-        <div class="product-list mt-4">
-          <app-add-to-cart
-            [product]="product"
-            (addToCartEvent)="addToCart($event)"
-          ></app-add-to-cart>
-        </div>
+        <button
+          (click)="addToCart(product)"
+          class="mt-2 w-full bg-orange-600 text-white cursor-pointer text-md font-medium py-2 rounded hover:bg-orange-700"
+        >
+          Add to Cart
+        </button>
       </div>
     </div>
   </div>
-
-  <!-- Cart Sidebar -->
 </div>
 
-<!-- Cart Box -->
-<!-- <div class="bg-gray-100 p-4 rounded-lg shadow mt-6 max-w-sm mx-auto">
-  <h3 class="text-lg font-semibold">Cart Details</h3>
-  <div *ngIf="cart.length > 0; else emptyCart">
-    <div *ngFor="let item of cart" class="border-b py-2 flex justify-between">
-      <div>
-        <p>{{ item.name }}</p>
-        <p class="text-sm text-gray-500">{{ item.price }}</p>
-      </div>
-      <button
-        class="text-red-500 hover:text-red-700 text-sm"
-        (click)="removeFromCart(item)"
-      >
-        Remove
-      </button>
-    </div>
-    <p class="mt-4 font-bold">Total: {{ calculateTotal() }}</p>
-    <button
-      class="mt-4 w-full bg-red-600 text-white text-sm font-medium py-2 rounded hover:bg-red-700"
-      (click)="clearCart()"
-    >
-      Clear Cart
-    </button>
-  </div>
-  <ng-template #emptyCart>
-    <p class="text-sm text-gray-500 mt-4">Your cart is empty.</p>
-  </ng-template>
-</div> -->
+<div class="product-list mt-4">
+  <!-- <app-cart-sidebar
+    [cartItems]="cartItems"
+    [isOpen]="isSidebarOpen"
+    (toggleSidebar)="toggleSidebar()"
+    (removeItem)="removeItem($event)"
+  ></app-cart-sidebar> -->
+</div>
